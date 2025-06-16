@@ -1,0 +1,246 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sma="clr-namespace:System.Management.Automation;assembly=System.Management.Automation" xmlns:ufa="clr-namespace:UiPath.Forms.Activities;assembly=UiPath.Forms.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Studio.Forms.Runtime</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Forms.Activities</x:String>
+      <x:String>UiPath.Platform.GlobalVariables</x:String>
+      <x:String>UiPath.Forms.Activities.Base</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Forms.Runtime</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Forms.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1192,2464" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="572,2441.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="repoLink" />
+        <Variable x:TypeArguments="x:String" Default="git clone https://github.com/jfree/jfreechart.git" Name="cmd_clone_repo" />
+        <Variable x:TypeArguments="x:String" Default="cd 'C:\Users\HP\OneDrive\Documents\UiPath\Software_Defect_Prediction\script\ck\hasil_clone'" Name="cmd_directory" />
+        <Variable x:TypeArguments="x:String" Name="psCommand" />
+        <Variable x:TypeArguments="x:String" Default="C:\Users\HP\OneDrive\Documents\UiPath\Software_Defect_Prediction\script\ck\hasil_clone" Name="repoBasePath" />
+        <Variable x:TypeArguments="x:String" Default="[repoBasePath + &quot;\&quot; + repoName]" Name="repoPath" />
+        <Variable x:TypeArguments="x:String" Default="C:\Users\HP\OneDrive\Documents\UiPath\Software_Defect_Prediction\script\ck\target\ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar" Name="jarPath" />
+        <Variable x:TypeArguments="x:String" Name="repoName" />
+        <Variable x:TypeArguments="x:String" Default="[repoPath + &quot;src&quot;]" Name="repoPathSRC" />
+        <Variable x:TypeArguments="x:String" Default="[&quot;java -jar &quot;&quot;&quot; + repoPathSRC + &quot;&quot;&quot; &quot;&quot;&quot; + repoPathSRC + &quot;&quot;&quot;&quot;]" Name="psCommand2" />
+        <Variable x:TypeArguments="x:String" Name="variable2ps" />
+        <Variable x:TypeArguments="x:String" Name="repoFixed" />
+        <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="outputClone" />
+        <Variable x:TypeArguments="p:PythonObject" Name="pyScript" />
+        <Variable x:TypeArguments="p:PythonObject" Name="predictionResult" />
+        <Variable x:TypeArguments="x:String" Default="C:\Users\HP\OneDrive\Documents\UiPath\Software_Defect_Prediction\script\ck\hasil_clone" Name="ckBasePath" />
+        <Variable x:TypeArguments="x:String" Name="variable1" />
+        <Variable x:TypeArguments="x:String" Name="csv_path" />
+        <Variable x:TypeArguments="p:PythonObject" Name="PythonObj_res" />
+        <Variable x:TypeArguments="p:PythonObject" Name="outputPredictionResult" />
+        <Variable x:TypeArguments="x:String" Name="outputStr" />
+        <Variable x:TypeArguments="x:String" Name="isPredictionResult" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Title="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" DisplayName="Show Form" FormId="12f23bf1-17aa-47db-b61b-b6fff7f79395" sap:VirtualizedContainerService.HintSize="538,254" sap2010:WorkflowViewState.IdRef="ShowFormActivity_1" IsAsync="False">
+        <ufa:ShowFormActivity.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="repositoryLink">[repoLink]</OutArgument>
+        </ufa:ShowFormActivity.Arguments>
+      </ufa:ShowFormActivity>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="1. Confirm the Repository Link " sap:VirtualizedContainerService.HintSize="538,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Are you sure you want to predict defects in this project repository? &quot; + repoLink + &quot;. Press OK to continue the process of predicting software defects. The first step is cloning the repo to your local machine. The process started at: &quot; + DateTime.Now.ToString()]" />
+      <ui:InvokePowerShell x:TypeArguments="x:String" CommandText="[&quot;Set-Location -Path '&quot; &amp; repoBasePath &amp; &quot;'; git clone '&quot; &amp; repoLink &amp; &quot;.git'&quot;]" ContinueOnError="True" DisplayName="Invoke Power Shell" sap:VirtualizedContainerService.HintSize="538,112.66666666666667" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_8" IsScript="True" Output="[outputClone]" PowerShellProcess="WindowsPowerShell64">
+        <ui:InvokePowerShell.Parameters>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+        </ui:InvokePowerShell.Parameters>
+        <ui:InvokePowerShell.PowerShellVariables>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokePowerShell.PowerShellVariables>
+      </ui:InvokePowerShell>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="2. Success Clone the Repository" sap:VirtualizedContainerService.HintSize="538,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Success clone the repo to your local device. Press OK to  continue the third process (extracting software metrics)&quot;]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:MessageBox>
+      <Assign sap:VirtualizedContainerService.HintSize="538,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[repoName]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[repoLink.Split("/"c).Last()]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:InvokePowerShell x:TypeArguments="sma:PSObject" CommandText="[&quot;Set-Location -Path '&quot; &amp; ckBasePath &amp; &quot;\&quot; &amp; repoName &amp; &quot;'; java -jar '&quot; &amp; jarPath &amp; &quot;' '&quot; &amp; repoBasePath &amp; &quot;\&quot; &amp; repoName &amp; &quot;\src'&quot;]" ContinueOnError="True" DisplayName="CMD - Extract Software Metrics" sap:VirtualizedContainerService.HintSize="538,112.66666666666667" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_9" IsScript="True" PowerShellProcess="WindowsPowerShell64">
+        <ui:InvokePowerShell.Parameters>
+          <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+        </ui:InvokePowerShell.Parameters>
+        <ui:InvokePowerShell.PowerShellVariables>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokePowerShell.PowerShellVariables>
+      </ui:InvokePowerShell>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="3. Success Extracting Software Metrics" sap:VirtualizedContainerService.HintSize="538,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Successfully extracted the software metrics from your cloned repo to your local device. Press OK to continue with the fourth step (predicting software defects).&quot;]" />
+      <Assign sap:VirtualizedContainerService.HintSize="538,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[csv_path]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[repoBasePath + "\"+ repoName + "\class.csv"]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="538,1179.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+        <TryCatch.Try>
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="536,687.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="502,627.3333333333334" sap2010:WorkflowViewState.IdRef="PythonScope_3" LibraryPath="C:\Users\HP\AppData\Local\Programs\Python\Python310\python310.dll" Path="C:\Users\HP\AppData\Local\Programs\Python\Python310" TargetPlatform="x64" WorkingFolder="C:\Users\HP\AppData\Local\Programs\Python\Python310">
+              <p:PythonScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,567.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LoadScript_3" Result="[pyScript]" ScriptFile="C:\Users\HP\OneDrive\Documents\UiPath\Software_Defect_Prediction\script\predict.py" />
+                    <p:InvokeMethod DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" Instance="[pyScript]" Name="predict_bugs" Parameters="[{csv_path}]" Result="[outputPredictionResult]" />
+                    <p:GetObject x:TypeArguments="x:String" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="GetObject`1_8" PythonObject="[outputPredictionResult]" Result="[isPredictionResult]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_20" Message="[&quot;8. Successfully  getting Python Object&quot; + isPredictionResult.ToString]" />
+                  </Sequence>
+                </ActivityAction>
+              </p:PythonScope.Body>
+            </p:PythonScope>
+          </Sequence>
+        </TryCatch.Try>
+        <TryCatch.Catches>
+          <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+            <ActivityAction x:TypeArguments="s:Exception">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="536,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_19" Message="[&quot;error info &quot; + exception.Message]" />
+              </Sequence>
+            </ActivityAction>
+          </Catch>
+        </TryCatch.Catches>
+        <TryCatch.Finally>
+          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="536,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_19">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </TryCatch.Finally>
+      </TryCatch>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="4. The Result is Out!" sap:VirtualizedContainerService.HintSize="538,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;All processes have been completed. Please check the result in the folder: &quot; + ckBasePath + &quot;\&quot; + repoName + &quot;\class_with_prediction.csv&quot; + &quot;. All processes were completed at: &quot; + DateTime.Now.ToString()]" />
+    </Sequence>
+  </Sequence>
+</Activity>

@@ -1,0 +1,52 @@
+﻿{
+  "Metadata": {
+    "Id": "12f23bf1-17aa-47db-b61b-b6fff7f79395",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "firstLayer",
+    "Theme": "Sandstone",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h2",
+        "content": "Software Defect Prediction for Java Project",
+        "key": "Software Defect Prediction for Java Project",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "How to Use",
+        "tableView": true,
+        "defaultValue": "1. This tools only user for Java Language\n2. Store your Java project into a gi repositories\n3. Copy your repo's link to input text box\n4. Wait until robot processes defect prediction\n5. Check on your folder on root path uipath",
+        "key": "textArea",
+        "type": "textarea",
+        "input": true,
+        "keyModified": true
+      },
+      {
+        "label": "Repository  Link",
+        "tooltip": "input your java project repositories",
+        "tableView": true,
+        "key": "repositoryLink",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Predict",
+        "disableOnInvalid": true,
+        "tableView": false,
+        "key": "predict",
+        "type": "button",
+        "input": true,
+        "saveOnEnter": false
+      }
+    ]
+  }
+}

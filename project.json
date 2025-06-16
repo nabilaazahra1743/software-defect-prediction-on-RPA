@@ -1,0 +1,68 @@
+{
+  "name": "Software_Defect_Prediction",
+  "projectId": "1ae93077-07e3-475f-a288-ddcd6b3c9161",
+  "description": "This robot is use for predicting software defects on Java project based on ck metrics. ",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Form.Activities": "[24.10.5]",
+    "UiPath.Python.Activities": "[1.10.0]",
+    "UiPath.System.Activities": "[25.4.2]",
+    "UiPath.System.Activities.Runtime": "[25.4.2]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.161.0",
+  "projectVersion": "1.0.8",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession",
+    "robotVersion": "25.0.161"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "arguments": {
+    "input": [],
+    "output": []
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "69b1f3d6-54cc-41e4-9aa8-00e20c6e6c7e",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {
+    "iconUrl": ".package/png-transparent-software-testing-computer-icons-code-coverage-defect-tracking-source-code-ncover-text-logo-quality-assurance-removebg-preview.png"
+  },
+  "targetFramework": "Windows"
+}
